@@ -1,6 +1,7 @@
 import javax.crypto.Cipher;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
+import org.apache.commons.codec.binary.*;
 
 /**
  * Created by Michael on 2/27/16.

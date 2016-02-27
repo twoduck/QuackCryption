@@ -3,7 +3,7 @@
  */
 public class Headers {
 
-    private static String makeHeader(String fileName) {
+    public static String makeHeader(String fileName) {
         String header = "QuAcKqUaCk ";
         header += Quack.quackCrypt(fileName);
         System.out.println(header);
@@ -14,7 +14,7 @@ public class Headers {
         return header;
     }
 
-    private static String decryptHeader (String header) {
+    public static String decryptHeader (String header) {
         String[] quacks = header.split(" ");
         String tempQuacks = "";
         String name;
