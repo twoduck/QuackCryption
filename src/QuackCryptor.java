@@ -13,18 +13,21 @@ public class QuackCryptor{
         Scanner scan;
         PrintWriter writer;
         String command = args[0];
-        String file = args[1];
+        String fileName = args[1];
         String temp;
         String temp2;
 
         if (command.equalsIgnoreCase("encrypt")) {
             try {
                 //System.out.println("File: " + file);
-                scan = new Scanner(new File(file));
+                File file = new File(fileName);
+                scan = new Scanner(file);
+                System.out.println(scan.nextByte());
                 writer = new PrintWriter("quacked.quack", "UTF-8");
-                String header = Headers.makeHeader(file);
+                String header = Headers.makeHeader(fileName);
                 writer.print(header);
                 while(scan.hasNextByte()) {
+                    System.out.println("Found a byte!");
                     temp = AES.encrypt("QuackQuackQuack!", "RandomInitVector", ((char) scan.nextByte()) + ""); //converts current byte to AES
                     temp2 = Quack.quackCrypt(temp);
                     writer.print(temp2);
@@ -37,7 +40,7 @@ public class QuackCryptor{
         } else if (command.equalsIgnoreCase("decrypt")) {
             try {
                 //System.out.println("File: " + file);
-                scan = new Scanner(new File(file));
+                scan = new Scanner(new File(fileName));
                 if (!(scan.next().equals("quackquAck"))) {
                     System.out.println("Inputted file is not encrypted with QuackCryption");
                     return;
