@@ -11,218 +11,448 @@ public class Quack {
      * @return quacked an encrypted string
      */
 
-    public static String quackCrypt(String str1) {
-        String quacked = "";
-        char[] inputArray = str1.toCharArray();
-        for (int i = 0; i < inputArray.length; i++) {
-            switch (inputArray[i]) {
-                case 10:
-                    quacked = quacked + "QUacKQuaCK";
-                    break;
-                case 43:
-                    quacked = quacked + "qUACKQUAcK";
-                    break;
-                case 46:
-                    quacked = quacked + "quACkqUAck";
-                    break;
-                case 47:
-                    quacked = quacked + "quackquack";
-                    break;
-                case 48:
-                    quacked = quacked + "Quackquack";
-                    break;
-                case 49:
-                    quacked = quacked + "qUackquack";
-                    break;
-                case 50:
-                    quacked = quacked + "quAckquack";
-                    break;
-                case 51:
-                    quacked = quacked + "quaCkquack";
-                    break;
-                case 52:
-                    quacked = quacked + "quacKquack";
-                    break;
-                case 53:
-                    quacked = quacked + "quackQuack";
-                    break;
-                case 54:
-                    quacked = quacked + "quackqUack";
-                    break;
-                case 55:
-                    quacked = quacked + "quackquAck";
-                    break;
-                case 56:
-                    quacked = quacked + "quackquaCk";
-                    break;
-                case 57:
-                    quacked = quacked + "quackquacK";
-                    break;
-                case 61:
-                    quacked = quacked + "QUackquack";
-                    break;
-                case 65:
-                    quacked = quacked + "QuAckquack";
-                    break;
-                case 66:
-                    quacked = quacked + "QuaCkquack";
-                    break;
-                case 67:
-                    quacked = quacked + "QuacKquack";
-                    break;
-                case 68:
-                    quacked = quacked + "QuackQuack";
-                    break;
-                case 69:
-                    quacked = quacked + "QuackqUack";
-                    break;
-                case 70:
-                    quacked = quacked + "QuackquAck";
-                    break;
-                case 71:
-                    quacked = quacked + "QuackquaCk";
-                    break;
-                case 72:
-                    quacked = quacked + "QuackquacK";
-                    break;
-                case 73:
-                    quacked = quacked + "QUAckquack";
-                    break;
-                case 74:
-                    quacked = quacked + "QUaCkquack";
-                    break;
-                case 75:
-                    quacked = quacked + "QUacKquack";
-                    break;
-                case 76:
-                    quacked = quacked + "QUackQuack";
-                    break;
-                case 77:
-                    quacked = quacked + "QUackqUack";
-                    break;
-                case 78:
-                    quacked = quacked + "QUackquAck";
-                    break;
-                case 79:
-                    quacked = quacked + "QUackquaCk";
-                    break;
-                case 80:
-                    quacked = quacked + "QUackquacK";
-                    break;
-                case 81:
-                    quacked = quacked + "QUACkquack";
-                    break;
-                case 82:
-                    quacked = quacked + "QUAcKquack";
-                    break;
-                case 83:
-                    quacked = quacked + "QUAckQuack";
-                    break;
-                case 84:
-                    quacked = quacked + "QUAckqUack";
-                    break;
-                case 85:
-                    quacked = quacked + "QUAckquAck";
-                    break;
-                case 86:
-                    quacked = quacked + "QUAckquaCk";
-                    break;
-                case 87:
-                    quacked = quacked + "QUAckquacK";
-                    break;
-                case 88:
-                    quacked = quacked + "QUACKquack";
-                    break;
-                case 89:
-                    quacked = quacked + "QUACkQuack";
-                    break;
-                case 90:
-                    quacked = quacked + "QUACkqUack";
-                    break;
-                case 97:
-                    quacked = quacked + "QUACkquAck";
-                    break;
-                case 98:
-                    quacked = quacked + "QUACkquaCk";
-                    break;
-                case 99:
-                    quacked = quacked + "QUACkquacK";
-                    break;
-                case 100:
-                    quacked = quacked + "QUACKQuack";
-                    break;
-                case 101:
-                    quacked = quacked + "QUACKqUack";
-                    break;
-                case 102:
-                    quacked = quacked + "QUACKquAck";
-                    break;
-                case 103:
-                    quacked = quacked + "QUACKquaCk";
-                    break;
-                case 104:
-                    quacked = quacked + "QUACKquacK";
-                    break;
-                case 105:
-                    quacked = quacked + "QUACKQUack";
-                    break;
-                case 106:
-                    quacked = quacked + "QUACKQuAck";
-                    break;
-                case 107:
-                    quacked = quacked + "QUACKQuaCk";
-                    break;
-                case 108:
-                    quacked = quacked + "QUACKQuacK";
-                    break;
-                case 109:
-                    quacked = quacked + "QUACKQUAck";
-                    break;
-                case 110:
-                    quacked = quacked + "QUACKQUaCk";
-                    break;
-                case 111:
-                    quacked = quacked + "QUACKQUacK";
-                    break;
-                case 112:
-                    quacked = quacked + "QUACKQUACk";
-                    break;
-                case 113:
-                    quacked = quacked + "QUACKQUAcK";
-                    break;
-                case 114:
-                    quacked = quacked + "QUACKQUACK";
-                    break;
-                case 115:
-                    quacked = quacked + "qUACKQUACK";
-                    break;
-                case 116:
-                    quacked = quacked + "QuACKQUACK";
-                    break;
-                case 117:
-                    quacked = quacked + "QUaCKQUACK";
-                    break;
-                case 118:
-                    quacked = quacked + "QUAcKQUACK";
-                    break;
-                case 119:
-                    quacked = quacked + "QUACkQUACK";
-                    break;
-                case 120:
-                    quacked = quacked + "QUACKqUACK";
-                    break;
-                case 121:
-                    quacked = quacked + "QUACKQuACK";
-                    break;
-                case 122:
-                    quacked = quacked + "QUACKQUaCK";
-                    break;
-
-            }
-            quacked = quacked + " ";
-        }
-        return quacked;
-    }
+	private String quackCrypt(String str1) {
+		String quacked = "";
+		char[] inputArray = str1.toCharArray();
+		for (int i = 0; i < inputArray.length; i++) {
+			switch (inputArray[i]) {
+				case 0:	
+					quacked += "quackquack";
+					break;
+				case 1:	
+					quacked += "Quackquack";
+					break;
+				case 2:	
+					quacked += "qUackquack";
+					break;
+				case 3:	
+					quacked += "QUackquack";
+					break;
+				case 4:	
+					quacked += "quAckquack";
+					break;
+				case 5:	
+					quacked += "QuAckquack";
+					break;
+				case 6:	
+					quacked += "qUAckquack";
+					break;
+				case 7:	
+					quacked += "QUAckquack";
+					break;
+				case 8:	
+					quacked += "quaCkquack";
+					break;
+				case 9:	
+					quacked += "QuaCkquack";
+					break;
+				case 10:	
+					quacked += "qUaCkquack";
+					break;
+				case 11:	
+					quacked += "QUaCkquack";
+					break;
+				case 12:	
+					quacked += "quACkquack";
+					break;
+				case 13:	
+					quacked += "QuACkquack";
+					break;
+				case 14:	
+					quacked += "qUACkquack";
+					break;
+				case 15:	
+					quacked += "QUACkquack";
+					break;
+				case 16:	
+					quacked += "quacKquack";
+					break;
+				case 17:	
+					quacked += "QuacKquack";
+					break;
+				case 18:	
+					quacked += "qUacKquack";
+					break;
+				case 19:	
+					quacked += "QUacKquack";
+					break;
+				case 20:	
+					quacked += "quAcKquack";
+					break;
+				case 21:	
+					quacked += "QuAcKquack";
+					break;
+				case 22:	
+					quacked += "qUAcKquack";
+					break;
+				case 23:	
+					quacked += "QUAcKquack";
+					break;
+				case 24:	
+					quacked += "quaCKquack";
+					break;
+				case 25:	
+					quacked += "QuaCKquack";
+					break;
+				case 26:	
+					quacked += "qUaCKquack";
+					break;
+				case 27:	
+					quacked += "QUaCKquack";
+					break;
+				case 28:	
+					quacked += "quACKquack";
+					break;
+				case 29:	
+					quacked += "QuACKquack";
+					break;
+				case 30:	
+					quacked += "qUACKquack";
+					break;
+				case 31:	
+					quacked += "QUACKquack";
+					break;
+				case 32:	
+					quacked += "quackQuack";
+					break;
+				case 33:	
+					quacked += "QuackQuack";
+					break;
+				case 34:	
+					quacked += "qUackQuack";
+					break;
+				case 35:	
+					quacked += "QUackQuack";
+					break;
+				case 36:	
+					quacked += "quAckQuack";
+					break;
+				case 37:	
+					quacked += "QuAckQuack";
+					break;
+				case 38:	
+					quacked += "qUAckQuack";
+					break;
+				case 39:	
+					quacked += "QUAckQuack";
+					break;
+				case 40:	
+					quacked += "quaCkQuack";
+					break;
+				case 41:	
+					quacked += "QuaCkQuack";
+					break;
+				case 42:	
+					quacked += "qUaCkQuack";
+					break;
+				case 43:	
+					quacked += "QUaCkQuack";
+					break;
+				case 44:	
+					quacked += "quACkQuack";
+					break;
+				case 45:	
+					quacked += "QuACkQuack";
+					break;
+				case 46:	
+					quacked += "qUACkQuack";
+					break;
+				case 47:	
+					quacked += "QUACkQuack";
+					break;
+				case 48:	
+					quacked += "quacKQuack";
+					break;
+				case 49:	
+					quacked += "QuacKQuack";
+					break;
+				case 50:	
+					quacked += "qUacKQuack";
+					break;
+				case 51:	
+					quacked += "QUacKQuack";
+					break;
+				case 52:	
+					quacked += "quAcKQuack";
+					break;
+				case 53:	
+					quacked += "QuAcKQuack";
+					break;
+				case 54:	
+					quacked += "qUAcKQuack";
+					break;
+				case 55:	
+					quacked += "QUAcKQuack";
+					break;
+				case 56:	
+					quacked += "quaCKQuack";
+					break;
+				case 57:	
+					quacked += "QuaCKQuack";
+					break;
+				case 58:	
+					quacked += "qUaCKQuack";
+					break;
+				case 59:	
+					quacked += "QUaCKQuack";
+					break;
+				case 60:	
+					quacked += "quACKQuack";
+					break;
+				case 61:	
+					quacked += "QuACKQuack";
+					break;
+				case 62:	
+					quacked += "qUACKQuack";
+					break;
+				case 63:	
+					quacked += "QUACKQuack";
+					break;
+				case 64:	
+					quacked += "quackqUack";
+					break;
+				case 65:	
+					quacked += "QuackqUack";
+					break;
+				case 66:	
+					quacked += "qUackqUack";
+					break;
+				case 67:	
+					quacked += "QUackqUack";
+					break;
+				case 68:	
+					quacked += "quAckqUack";
+					break;
+				case 69:	
+					quacked += "QuAckqUack";
+					break;
+				case 70:	
+					quacked += "qUAckqUack";
+					break;
+				case 71:	
+					quacked += "QUAckqUack";
+					break;
+				case 72:	
+					quacked += "quaCkqUack";
+					break;
+				case 73:	
+					quacked += "QuaCkqUack";
+					break;
+				case 74:	
+					quacked += "qUaCkqUack";
+					break;
+				case 75:	
+					quacked += "QUaCkqUack";
+					break;
+				case 76:	
+					quacked += "quACkqUack";
+					break;
+				case 77:	
+					quacked += "QuACkqUack";
+					break;
+				case 78:	
+					quacked += "qUACkqUack";
+					break;
+				case 79:	
+					quacked += "QUACkqUack";
+					break;
+				case 80:	
+					quacked += "quacKqUack";
+					break;
+				case 81:	
+					quacked += "QuacKqUack";
+					break;
+				case 82:	
+					quacked += "qUacKqUack";
+					break;
+				case 83:	
+					quacked += "QUacKqUack";
+					break;
+				case 84:	
+					quacked += "quAcKqUack";
+					break;
+				case 85:	
+					quacked += "QuAcKqUack";
+					break;
+				case 86:	
+					quacked += "qUAcKqUack";
+					break;
+				case 87:	
+					quacked += "QUAcKqUack";
+					break;
+				case 88:	
+					quacked += "quaCKqUack";
+					break;
+				case 89:	
+					quacked += "QuaCKqUack";
+					break;
+				case 90:	
+					quacked += "qUaCKqUack";
+					break;
+				case 91:	
+					quacked += "QUaCKqUack";
+					break;
+				case 92:	
+					quacked += "quACKqUack";
+					break;
+				case 93:	
+					quacked += "QuACKqUack";
+					break;
+				case 94:	
+					quacked += "qUACKqUack";
+					break;
+				case 95:	
+					quacked += "QUACKqUack";
+					break;
+				case 96:	
+					quacked += "quackQUack";
+					break;
+				case 97:	
+					quacked += "QuackQUack";
+					break;
+				case 98:	
+					quacked += "qUackQUack";
+					break;
+				case 99:	
+					quacked += "QUackQUack";
+					break;
+				case 100:	
+					quacked += "quAckQUack";
+					break;
+				case 101:	
+					quacked += "QuAckQUack";
+					break;
+				case 102:	
+					quacked += "qUAckQUack";
+					break;
+				case 103:	
+					quacked += "QUAckQUack";
+					break;
+				case 104:	
+					quacked += "quaCkQUack";
+					break;
+				case 105:	
+					quacked += "QuaCkQUack";
+					break;
+				case 106:	
+					quacked += "qUaCkQUack";
+					break;
+				case 107:	
+					quacked += "QUaCkQUack";
+					break;
+				case 108:	
+					quacked += "quACkQUack";
+					break;
+				case 109:	
+					quacked += "QuACkQUack";
+					break;
+				case 110:	
+					quacked += "qUACkQUack";
+					break;
+				case 111:	
+					quacked += "QUACkQUack";
+					break;
+				case 112:	
+					quacked += "quacKQUack";
+					break;
+				case 113:	
+					quacked += "QuacKQUack";
+					break;
+				case 114:	
+					quacked += "qUacKQUack";
+					break;
+				case 115:	
+					quacked += "QUacKQUack";
+					break;
+				case 116:	
+					quacked += "quAcKQUack";
+					break;
+				case 117:	
+					quacked += "QuAcKQUack";
+					break;
+				case 118:	
+					quacked += "qUAcKQUack";
+					break;
+				case 119:	
+					quacked += "QUAcKQUack";
+					break;
+				case 120:	
+					quacked += "quaCKQUack";
+					break;
+				case 121:	
+					quacked += "QuaCKQUack";
+					break;
+				case 122:	
+					quacked += "qUaCKQUack";
+					break;
+				case 123:	
+					quacked += "QUaCKQUack";
+					break;
+				case 124:	
+					quacked += "quACKQUack";
+					break;
+				case 125:	
+					quacked += "QuACKQUack";
+					break;
+				case 126:	
+					quacked += "qUACKQUack";
+					break;
+				case 127:	
+					quacked += "QUACKQUack";
+					break;
+				case 128:	
+					quacked += "quackquAck";
+					break;
+				case 129:	
+					quacked += "QuackquAck";
+					break;
+				case 130:	
+					quacked += "qUackquAck";
+					break;
+				case 131:	
+					quacked += "QUackquAck";
+					break;
+				case 132:	
+					quacked += "quAckquAck";
+					break;
+				case 133:	
+					quacked += "QuAckquAck";
+					break;
+				case 134:	
+					quacked += "qUAckquAck";
+					break;
+				case 135:	
+					quacked += "QUAckquAck";
+					break;
+				case 136:	
+					quacked += "quaCkquAck";
+					break;
+				case 137:	
+					quacked += "QuaCkquAck";
+					break;
+				case 138:	
+					quacked += "qUaCkquAck";
+					break;
+				case 139:	
+					quacked += "QUaCkquAck";
+					break;
+				case 140:	
+					quacked += "quACkquAck";
+					break;
+				case 141:	
+					quacked += "QuACkquAck";
+					break;
+				case 142:	
+					quacked += "qUACkquAck";
+					break;
+				case 143:	
+					quacked += "QUACkquAck";
+					break;
+			}
+			quacked += " ";
+		}
+		return quacked
+	}
 
     /**
      * The quackReader method takes one parameter, a quack encrypted string, and
