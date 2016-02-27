@@ -11,7 +11,7 @@ public class Quack {
      * @return quacked an encrypted string
      */
 
-	private String quackCrypt(String str1) {
+	public static String quackCrypt(String str1) {
 		String quacked = "";
 		char[] inputArray = str1.toCharArray();
 		for (int i = 0; i < inputArray.length; i++) {
@@ -451,7 +451,7 @@ public class Quack {
 			}
 			quacked += " ";
 		}
-		return quacked
+		return quacked;
 	}
 
     /**
