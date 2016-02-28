@@ -831,8 +831,15 @@ public class Quack {
 				case "QUACKQUack":	
 					deQuacked += (char)127;
 					break;
+				default:
+					System.out.println("Character not found: " + translateArray[i]);
+					break;
 			}
 		}
 		return deQuacked;
+	}
+
+	public static void main(String[] args) {
+
 	}
 }
