@@ -3,9 +3,9 @@ import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 import org.apache.commons.codec.binary.*;
 
-public class AES {
-    public static String encrypt(String key, String initVector, String value) {
-        try {
+public class AES { // This class encrypts all files using AES (128-bit CBC with PKCS5 Padding).
+    public static String encrypt(String key, String initVector, String value) { // 'key' and 'initVector' must be 16 characters long
+        try {																	// 'value' can be of any length.
             IvParameterSpec iv = new IvParameterSpec(initVector.getBytes("ASCII"));
             SecretKeySpec skeySpec = new SecretKeySpec(key.getBytes("ASCII"), "AES");
 
@@ -13,8 +13,6 @@ public class AES {
             cipher.init(Cipher.ENCRYPT_MODE, skeySpec, iv);
 
             byte[] encrypted = cipher.doFinal(value.getBytes());
-            //System.out.println("encrypted string: "
-            //        + Base64.encodeBase64String(encrypted));
 
             return Base64.encodeBase64String(encrypted);
         } catch (Exception ex) {
@@ -33,10 +31,7 @@ public class AES {
             cipher.init(Cipher.DECRYPT_MODE, skeySpec, iv);
 
             byte[] original = cipher.doFinal(Base64.decodeBase64(encrypted));
-            String toReturn = "";
-            for (int x = 0; x < original.length; x++) {
-                toReturn+= original[x] + " ";
-            }
+			
             return new String(original);
         } catch (Exception ex) {
             ex.printStackTrace();
