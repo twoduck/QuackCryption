@@ -33,7 +33,10 @@ public class AES {
             cipher.init(Cipher.DECRYPT_MODE, skeySpec, iv);
 
             byte[] original = cipher.doFinal(Base64.decodeBase64(encrypted));
-
+            String toReturn = "";
+            for (int x = 0; x < original.length; x++) {
+                toReturn+= original[x] + " ";
+            }
             return new String(original);
         } catch (Exception ex) {
             ex.printStackTrace();

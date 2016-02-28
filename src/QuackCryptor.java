@@ -32,7 +32,7 @@ public class QuackCryptor{
                 String toEncrypt = "";
                 for (int x = 0; x < bytes; x++) {
                     System.out.println(b = fis.read());
-                    toEncrypt += b;
+                    toEncrypt += b + " ";
                     /*temp = AES.encrypt("QuackQuackQuack!", "RandomInitVector", ((char) b) + "");
                     System.out.println(temp);
                     temp2 = Quack.quackCrypt(temp);
@@ -77,6 +77,7 @@ public class QuackCryptor{
                 String toUnAES = Quack.quackReader(quacks);
                 String unAESd = AES.decrypt("QuackQuackQuack!", "RandomInitVector", toUnAES);
                 System.out.println(unAESd);
+                String[] test = unAESd.split(" ");
 
 
                 /*
@@ -89,14 +90,12 @@ public class QuackCryptor{
                 */
                 File output = new File("icon.jpg");
                 FileOutputStream fos = new FileOutputStream(output);
-                /*System.out.println(aes);
-                for (int i = 0; i < aes.length(); i++) {
-                    System.out.println("50");
-                    fos.write(aes.charAt(i));
+                for (int i = 0; i < test.length; i++) {
+                    //System.out.println("50");
+                    fos.write(Integer.parseInt(test[i]));
                 }
                 fos.close();
                 return;
-                */
             } catch (IOException e) {
                 e.printStackTrace();
             }
