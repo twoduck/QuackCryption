@@ -6,15 +6,13 @@
 
 import sun.audio.AudioPlayer;
 import sun.audio.AudioStream;
+
+import javax.swing.*;
 import java.io.File;
-import javax.swing.ImageIcon;
-import javax.swing.JFileChooser;
-import javax.swing.JOptionPane;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.Scanner;
-import java.util.StringJoiner;
 
 /**
  *
@@ -75,9 +73,10 @@ public class Window extends javax.swing.JFrame {
         jTextPane3.setEditable(false);
         jTextPane3.setBackground(new java.awt.Color(63, 81, 181));
         jTextPane3.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
-        jTextPane3.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
+        jTextPane3.setFont(new java.awt.Font("Trebuchet MS", 0, 24)); // NOI18N
         jTextPane3.setForeground(new java.awt.Color(255, 255, 255));
-        jTextPane3.setText("Enter any multiple of 16 characters as your first security key");
+        jTextPane3.setText("Key");
+
         jScrollPane6.setViewportView(jTextPane3);
 
         jRadioButton1.setBackground(new java.awt.Color(63, 81, 181));
@@ -111,9 +110,9 @@ public class Window extends javax.swing.JFrame {
 
         jTextPane2.setEditable(false);
         jTextPane2.setBackground(new java.awt.Color(63, 81, 181));
-        jTextPane2.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
+        jTextPane2.setFont(new java.awt.Font("Trebuchet MS", 0, 24)); // NOI18N
         jTextPane2.setForeground(new java.awt.Color(255, 255, 255));
-        jTextPane2.setText("Enter any multiple of 16 characters as your second security key");
+        jTextPane2.setText("Init Vector");
         jScrollPane5.setViewportView(jTextPane2);
 
         jButton1.setText("Click to pick a file to encrypt/decrypt");
@@ -338,7 +337,7 @@ fc.showOpenDialog(jButton1);
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(null, "Enter any multiple of 16 characters into the two text boxes and select either file encryption/decryption or local text encryption/decryption. When you're ready to encrypt/decrypt, click on the duck.", "HELP", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Enter 16 characters into each of the two text boxes. Those are essentially your encryption passwords. Then, select either file encryption/decryption or local text encryption/decryption. When you're ready to encrypt/decrypt, click on the duck.", "HELP", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jButton2MouseClicked
 
 
