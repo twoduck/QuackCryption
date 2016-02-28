@@ -1,16 +1,4 @@
-/**
- * Created by Michael on 2/27/16.
- */
 public class Quack {
-    /**
-     * The quackCrypt method takes one parameter, a string of ASCII characters, and
-     * converts each character into a variant of two quacks with different capitalization.
-     * It returns the "quacked" text.
-     *
-     * @param str1 the string to be encrypted
-     * @return quacked an encrypted string
-     */
-
 	public static String quackCrypt(String str1) {
 		String quacked = "";
 		char[] inputArray = str1.toCharArray();
@@ -453,15 +441,6 @@ public class Quack {
 		}
 		return quacked;
 	}
-
-    /**
-     * The quackReader method takes one parameter, a quack encrypted string, and
-     * converts each series of two quacks with the corresponding character. It returns
-     * the translated text.
-     *
-     * @param str2 the string to be decrypted
-     * @return deQuacked the decrypted string
-     */
 
 	public static String quackReader(String str2) {
 		String deQuacked = "";

@@ -3,9 +3,6 @@ import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 import org.apache.commons.codec.binary.*;
 
-/**
- * Created by Michael on 2/27/16.
- */
 public class AES {
     public static String encrypt(String key, String initVector, String value) {
         try {
