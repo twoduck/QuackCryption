@@ -29,13 +29,18 @@ public class QuackCryptor{
                 writer.print(header);
 
                 int b;
+                String toEncrypt = "";
                 for (int x = 0; x < bytes; x++) {
                     System.out.println(b = fis.read());
-                    temp = AES.encrypt("QuackQuackQuack!", "RandomInitVector", ((char) b) + "");
+                    toEncrypt += b;
+                    /*temp = AES.encrypt("QuackQuackQuack!", "RandomInitVector", ((char) b) + "");
                     System.out.println(temp);
                     temp2 = Quack.quackCrypt(temp);
-                    writer.print(temp2);
+                    writer.print(temp2);*/
                 }
+                temp = AES.encrypt("QuackQuackQuack!", "RandomInitVector", toEncrypt);
+                temp2 = Quack.quackCrypt(temp);
+                writer.print(temp2);
                 fis.close();
                 /*while(scan.hasNextByte()) {
                     System.out.println("Found a byte!");
@@ -67,15 +72,13 @@ public class QuackCryptor{
                 System.out.println("name is: " + name);
                 String quacks = "";
                 while (scan.hasNext()) {
-                    quacks+= scan.next();
+                    quacks += scan.next() + " ";
                 }
-                String decrypted = "";
-                String singleAes = "";
-                String quackquack = "quackquack";
-                for (int x = 0;  < quacks.length(); ) {
-                    singleAes = Quack.quackReader(quacks.substring(x, x+10));
-                    decrypted += AES.decrypt("QuackQuackQuack!", "RandomInitVector", singleAes);
-                }
+                String toUnAES = Quack.quackReader(quacks);
+                String unAESd = AES.decrypt("QuackQuackQuack!", "RandomInitVector", toUnAES);
+                System.out.println(unAESd);
+
+
                 /*
                 String aes = Quack.quackReader(quacks);
                 String endString = "";
@@ -86,13 +89,14 @@ public class QuackCryptor{
                 */
                 File output = new File("icon.jpg");
                 FileOutputStream fos = new FileOutputStream(output);
-                System.out.println(aes);
+                /*System.out.println(aes);
                 for (int i = 0; i < aes.length(); i++) {
                     System.out.println("50");
                     fos.write(aes.charAt(i));
                 }
                 fos.close();
                 return;
+                */
             } catch (IOException e) {
                 e.printStackTrace();
             }
