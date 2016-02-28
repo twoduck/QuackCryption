@@ -337,7 +337,10 @@ fc.showOpenDialog(jButton1);
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(null, "Enter 16 characters into each of the two text boxes. Those are essentially your encryption passwords. Then, select either file encryption/decryption or local text encryption/decryption. When you're ready to encrypt/decrypt, click on the duck.", "HELP", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "" +
+                "Enter 16 characters into each of the two text boxes. Those are essentially your encryption passwords.\n" +
+                "Then, select either file encryption/decryption or local text encryption/decryption. When you're ready\n" +
+                "to encrypt/decrypt, click on the duck.", "HELP", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_jButton2MouseClicked
 
 
