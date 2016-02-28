@@ -1,15 +1,13 @@
 import java.io.*;
 import java.util.Scanner;
 
-public class QuackCryptor{
-
+public class QuackCryptor {
     public static void main(String[] args) {
-
+        SingleStep ss = new SingleStep();
         if (args.length != 2) {
             System.out.println("Usage: java quackcryption [encrypt, decrypt] [file.txt]");
             return;
         }
-
         Scanner scan;
         PrintWriter writer;
         String command = args[0]; //used to specify the user's intent
@@ -32,8 +30,8 @@ public class QuackCryptor{
                     b = fis.read(); //reads the next byte in the file
                     toEncrypt += b + " "; //puts the next byte in the file followed by a space
                 }
-                temp = AES.encrypt("QuackQuackQuack!", "RandomInitVector", toEncrypt); //encrypts the string of bytes
-                temp2 = Quack.quackCrypt(temp); //encrypts the encrypted string into quacks
+                temp = ss.toAES("QuackQuackQuack!", "RandomInitVector", toEncrypt); //encrypts the string of bytes
+                temp2 = ss.toQuack(temp); //encrypts the encrypted string into quacks
                 writer.print(temp2); //prints quacks to the file, following the header
                 fis.close();
                 writer.close();
@@ -61,9 +59,8 @@ public class QuackCryptor{
                 while (scan.hasNext()) {
                     quacks += scan.next() + " "; //contains all quacks in the file
                 }
-                String toUnAES = Quack.quackReader(quacks);//converts quacks to encrypted text
-                String unAESd = AES.decrypt("QuackQuackQuack!", "RandomInitVector", toUnAES);//decrypts encrypted text
-                //System.out.println(unAESd);
+                String toUnAES = ss.fromQuack(quacks);//converts quacks to encrypted text
+                String unAESd = ss.fromAES("QuackQuackQuack!", "RandomInitVector", toUnAES);//decrypts encrypted text
                 String[] test = unAESd.split(" ");
 
                 File output = new File(name);//writes to a file with the name and extension found in the header

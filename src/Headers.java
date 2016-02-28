@@ -1,12 +1,9 @@
-/**
- * Created by Michael on 2/27/16.
- */
 public class Headers {
+    public static SingleStep ss = new SingleStep();
 
     public static String makeHeader(String fileName) {
         String header = "qUACkquaCk ";
-        header += Quack.quackCrypt(fileName);
-        //System.out.println(header);
+        header += ss.toQuack(fileName);
         String[] headers = header.split(" ");
         for (int x = headers.length; x < 256; x++) {
             header += "qUaCkQuAcK ";
@@ -23,7 +20,7 @@ public class Headers {
             if (x != quacks.length - 1)
                 tempQuacks += " ";
         }
-        name = Quack.quackReader(tempQuacks);
+        name = ss.fromQuack(tempQuacks);
         return name;
     }
 }

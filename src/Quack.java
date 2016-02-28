@@ -1260,9 +1260,6 @@ public class Quack {
 				case "qUACkquaCk":
 					deQuacked += (char)270;
 					break;
-				default:
-					System.out.println("Character not found: " + translateArray[i]);
-					break;
 			}
 		}
 		return deQuacked; // Returns the deQuacked string.
