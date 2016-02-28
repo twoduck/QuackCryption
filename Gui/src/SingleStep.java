@@ -1,3 +1,5 @@
+import com.sun.xml.internal.bind.v2.runtime.unmarshaller.XsiNilLoader;
+
 public class SingleStep {
     public String toAES(String key, String initVector, String str1) {
         return AES.encrypt(key, initVector, str1);
@@ -21,5 +23,10 @@ public class SingleStep {
 
     public String throughNormal(String key, String initVector, String str6) {
         return fromAES(key, initVector, fromQuack(str6));
+    }
+
+    public static void main(String[] args) {
+        SingleStep ss = new SingleStep();
+        System.out.println(ss.throughQuack("QuackQuackQuack!", "RandomInitVector", "Scoot"));
     }
 }

@@ -31,7 +31,7 @@ public class QuackCryptor {
             PrintWriter writer;
             String temp, temp2;
             System.out.println("File: " + fileName);
-            File file = new File("/Users/Michael/Desktop/TEST/icon.jpg");
+            File file = new File(fileName);
             FileInputStream fis = new FileInputStream(file);
             int bytes = fis.available(); //sees how many bytes are available in the file
             writer = new PrintWriter("encrypted.quack", "UTF-8");

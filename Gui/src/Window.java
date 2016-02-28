@@ -14,6 +14,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.Scanner;
+import java.util.StringJoiner;
 
 /**
  *
@@ -105,6 +106,7 @@ public class Window extends javax.swing.JFrame {
 
         jTextArea2.setColumns(20);
         jTextArea2.setRows(5);
+        jTextArea2.setLineWrap(true);
         jScrollPane2.setViewportView(jTextArea2);
 
         jTextPane2.setEditable(false);
@@ -264,6 +266,8 @@ fc.showOpenDialog(jButton1);
             scan = new Scanner(selFile);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
+        } catch (NullPointerException e) {
+            e.printStackTrace();
         }
         String first = null;
         try {
@@ -278,29 +282,56 @@ fc.showOpenDialog(jButton1);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        if (scan.hasNext())
-            first = scan.next();
-        if (jTextArea2.getText().startsWith("qUACkquaCk") || (first != null && first.equals("qUACkquaCk"))) {
-             ImageIcon icon = new ImageIcon(getClass().getResource("Picture6.png"));
-               jLabel1.setIcon(icon);
-               code1 = jTextField1.getText();
-               code2 = jTextField2.getText();
-               fileName = selFile.getPath();
-             QuackCryptor.decrypt(fileName, code1, code2);
-             repaint();
-        
-         }
-         else {
-             ImageIcon icon = new ImageIcon(getClass().getResource("Picture3.png"));
-               jLabel1.setIcon(icon);
-               code1 = jTextField1.getText();
-               code2 = jTextField2.getText();
-             fileName = selFile.getPath();
-             QuackCryptor.encrypt(fileName, code1, code2);
-        repaint();
-        
-         }
-        
+        try {
+            if (scan.hasNext())
+                first = scan.next();
+        } catch (NullPointerException e) {
+            e.printStackTrace();
+        }
+        System.out.println(jRadioButton1.isSelected());
+        System.out.println(jRadioButton2.isSelected());
+        if (jRadioButton2.isSelected()) {
+            System.out.println(jTextArea2.getText());
+            if (jTextArea2.getText().startsWith("qUACkquaCk") || (first != null && first.equals("qUACkquaCk"))) {
+                ImageIcon icon = new ImageIcon(getClass().getResource("Picture6.png"));
+                jLabel1.setIcon(icon);
+                code1 = jTextField1.getText();
+                code2 = jTextField2.getText();
+                fileName = selFile.getPath();
+                QuackCryptor.decrypt(fileName, code1, code2);
+                repaint();
+
+            } else {
+                ImageIcon icon = new ImageIcon(getClass().getResource("Picture3.png"));
+                jLabel1.setIcon(icon);
+                code1 = jTextField1.getText();
+                code2 = jTextField2.getText();
+                fileName = selFile.getPath();
+                QuackCryptor.encrypt(fileName, code1, code2);
+                repaint();
+
+            }
+        } else {
+            System.out.println("jRadioButton1");
+            code1 = jTextField1.getText();
+            code2 = jTextField2.getText();
+            SingleStep ss = new SingleStep();
+            if (jTextArea2.getText().startsWith("qUACkquaCk")) {
+                ImageIcon icon = new ImageIcon(getClass().getResource("Picture6.png"));
+                jLabel1.setIcon(icon);
+                jTextArea2.setText(ss.throughNormal(code1, code2, jTextArea2.getText().substring(11)));
+            } else {
+                ImageIcon icon = new ImageIcon(getClass().getResource("Picture3.png"));
+                jLabel1.setIcon(icon);
+                System.out.println("code1: " + code1);
+                System.out.println("code2: " + code2);
+                System.out.println("jTextArea2: " + jTextArea2.getText());
+                String encrypted = ss.throughQuack(code1, code2, jTextArea2.getText());
+                encrypted = "qUACkquaCk " + encrypted;
+                System.out.println("encrypted: " + encrypted);
+                jTextArea2.setText(encrypted);
+            }
+        }
        // icon.getImage().flush();
       
     }//GEN-LAST:event_jLabel1MouseClicked
