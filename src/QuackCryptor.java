@@ -58,7 +58,7 @@ public class QuackCryptor{
                 System.out.println("File: " + fileName);
                 File file = new File(fileName);
                 scan = new Scanner(file);
-                if (!(scan.next().equals("quackquAck"))) {
+                if (!(scan.next().equals("qUACkquaCk"))) {
                     System.out.println("Inputted file is not encrypted with QuackCryption");
                     return;
                 }

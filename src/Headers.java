@@ -4,7 +4,7 @@
 public class Headers {
 
     public static String makeHeader(String fileName) {
-        String header = "quackquAck ";
+        String header = "qUACkquaCk ";
         header += Quack.quackCrypt(fileName);
         //System.out.println(header);
         String[] headers = header.split(" ");
