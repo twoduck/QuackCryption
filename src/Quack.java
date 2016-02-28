@@ -831,6 +831,435 @@ public class Quack {
 				case "QUACKQUack":	
 					deQuacked += (char)127;
 					break;
+				case "quackquAck":
+					deQuacked += (char)128;
+					break;
+				case "QuackquAck":
+					deQuacked += (char)129;
+					break;
+				case "qUackquAck":
+					deQuacked += (char)130;
+					break;
+				case "QUackquAck":
+					deQuacked += (char)131;
+					break;
+				case "quAckquAck":
+					deQuacked += (char)132;
+					break;
+				case "QuAckquAck":
+					deQuacked += (char)133;
+					break;
+				case "qUAckquAck":
+					deQuacked += (char)134;
+					break;
+				case "QUAckquAck":
+					deQuacked += (char)135;
+					break;
+				case "quaCkquAck":
+					deQuacked += (char)136;
+					break;
+				case "QuaCkquAck":
+					deQuacked += (char)137;
+					break;
+				case "qUaCkquAck":
+					deQuacked += (char)138;
+					break;
+				case "QUaCkquAck":
+					deQuacked += (char)139;
+					break;
+				case "quACkquAck":
+					deQuacked += (char)140;
+					break;
+				case "QuACkquAck":
+					deQuacked += (char)141;
+					break;
+				case "qUACkquAck":
+					deQuacked += (char)142;
+					break;
+				case "QUACkquAck":
+					deQuacked += (char)143;
+					break;
+				case "quacKquAck":
+					deQuacked += (char)144;
+					break;
+				case "QuacKquAck":
+					deQuacked += (char)145;
+					break;
+				case "qUacKquAck":
+					deQuacked += (char)146;
+					break;
+				case "QUacKquAck":
+					deQuacked += (char)147;
+					break;
+				case "quAcKquAck":
+					deQuacked += (char)148;
+					break;
+				case "QuAcKquAck":
+					deQuacked += (char)149;
+					break;
+				case "qUAcKquAck":
+					deQuacked += (char)150;
+					break;
+				case "QUAcKquAck":
+					deQuacked += (char)151;
+					break;
+				case "quaCKquAck":
+					deQuacked += (char)152;
+					break;
+				case "QuaCKquAck":
+					deQuacked += (char)153;
+					break;
+				case "qUaCKquAck":
+					deQuacked += (char)154;
+					break;
+				case "QUaCKquAck":
+					deQuacked += (char)155;
+					break;
+				case "quACKquAck":
+					deQuacked += (char)156;
+					break;
+				case "QuACKquAck":
+					deQuacked += (char)157;
+					break;
+				case "qUACKquAck":
+					deQuacked += (char)158;
+					break;
+				case "QUACKquAck":
+					deQuacked += (char)159;
+					break;
+				case "quackQuAck":
+					deQuacked += (char)160;
+					break;
+				case "QuackQuAck":
+					deQuacked += (char)161;
+					break;
+				case "qUackQuAck":
+					deQuacked += (char)162;
+					break;
+				case "QUackQuAck":
+					deQuacked += (char)163;
+					break;
+				case "quAckQuAck":
+					deQuacked += (char)164;
+					break;
+				case "QuAckQuAck":
+					deQuacked += (char)165;
+					break;
+				case "qUAckQuAck":
+					deQuacked += (char)166;
+					break;
+				case "QUAckQuAck":
+					deQuacked += (char)167;
+					break;
+				case "quaCkQuAck":
+					deQuacked += (char)168;
+					break;
+				case "QuaCkQuAck":
+					deQuacked += (char)169;
+					break;
+				case "qUaCkQuAck":
+					deQuacked += (char)170;
+					break;
+				case "QUaCkQuAck":
+					deQuacked += (char)171;
+					break;
+				case "quACkQuAck":
+					deQuacked += (char)172;
+					break;
+				case "QuACkQuAck":
+					deQuacked += (char)173;
+					break;
+				case "qUACkQuAck":
+					deQuacked += (char)174;
+					break;
+				case "QUACkQuAck":
+					deQuacked += (char)175;
+					break;
+				case "quacKQuAck":
+					deQuacked += (char)176;
+					break;
+				case "QuacKQuAck":
+					deQuacked += (char)177;
+					break;
+				case "qUacKQuAck":
+					deQuacked += (char)178;
+					break;
+				case "QUacKQuAck":
+					deQuacked += (char)179;
+					break;
+				case "quAcKQuAck":
+					deQuacked += (char)180;
+					break;
+				case "QuAcKQuAck":
+					deQuacked += (char)181;
+					break;
+				case "qUAcKQuAck":
+					deQuacked += (char)182;
+					break;
+				case "QUAcKQuAck":
+					deQuacked += (char)183;
+					break;
+				case "quaCKQuAck":
+					deQuacked += (char)184;
+					break;
+				case "QuaCKQuAck":
+					deQuacked += (char)185;
+					break;
+				case "qUaCKQuAck":
+					deQuacked += (char)186;
+					break;
+				case "QUaCKQuAck":
+					deQuacked += (char)187;
+					break;
+				case "quACKQuAck":
+					deQuacked += (char)188;
+					break;
+				case "QuACKQuAck":
+					deQuacked += (char)189;
+					break;
+				case "qUACKQuAck":
+					deQuacked += (char)190;
+					break;
+				case "QUACKQuAck":
+					deQuacked += (char)191;
+					break;
+				case "quackqUAck":
+					deQuacked += (char)192;
+					break;
+				case "QuackqUAck":
+					deQuacked += (char)193;
+					break;
+				case "qUackqUAck":
+					deQuacked += (char)194;
+					break;
+				case "QUackqUAck":
+					deQuacked += (char)195;
+					break;
+				case "quAckqUAck":
+					deQuacked += (char)196;
+					break;
+				case "QuAckqUAck":
+					deQuacked += (char)197;
+					break;
+				case "qUAckqUAck":
+					deQuacked += (char)198;
+					break;
+				case "QUAckqUAck":
+					deQuacked += (char)199;
+					break;
+				case "quaCkqUAck":
+					deQuacked += (char)200;
+					break;
+				case "QuaCkqUAck":
+					deQuacked += (char)201;
+					break;
+				case "qUaCkqUAck":
+					deQuacked += (char)202;
+					break;
+				case "QUaCkqUAck":
+					deQuacked += (char)203;
+					break;
+				case "quACkqUAck":
+					deQuacked += (char)204;
+					break;
+				case "QuACkqUAck":
+					deQuacked += (char)205;
+					break;
+				case "qUACkqUAck":
+					deQuacked += (char)206;
+					break;
+				case "QUACkqUAck":
+					deQuacked += (char)207;
+					break;
+				case "quacKqUAck":
+					deQuacked += (char)208;
+					break;
+				case "QuacKqUAck":
+					deQuacked += (char)209;
+					break;
+				case "qUacKqUAck":
+					deQuacked += (char)210;
+					break;
+				case "QUacKqUAck":
+					deQuacked += (char)211;
+					break;
+				case "quAcKqUAck":
+					deQuacked += (char)212;
+					break;
+				case "QuAcKqUAck":
+					deQuacked += (char)213;
+					break;
+				case "qUAcKqUAck":
+					deQuacked += (char)214;
+					break;
+				case "QUAcKqUAck":
+					deQuacked += (char)215;
+					break;
+				case "quaCKqUAck":
+					deQuacked += (char)216;
+					break;
+				case "QuaCKqUAck":
+					deQuacked += (char)217;
+					break;
+				case "qUaCKqUAck":
+					deQuacked += (char)218;
+					break;
+				case "QUaCKqUAck":
+					deQuacked += (char)219;
+					break;
+				case "quACKqUAck":
+					deQuacked += (char)220;
+					break;
+				case "QuACKqUAck":
+					deQuacked += (char)221;
+					break;
+				case "qUACKqUAck":
+					deQuacked += (char)222;
+					break;
+				case "QUACKqUAck":
+					deQuacked += (char)223;
+					break;
+				case "quackQUAck":
+					deQuacked += (char)224;
+					break;
+				case "QuackQUAck":
+					deQuacked += (char)225;
+					break;
+				case "qUackQUAck":
+					deQuacked += (char)226;
+					break;
+				case "QUackQUAck":
+					deQuacked += (char)227;
+					break;
+				case "quAckQUAck":
+					deQuacked += (char)228;
+					break;
+				case "QuAckQUAck":
+					deQuacked += (char)229;
+					break;
+				case "qUAckQUAck":
+					deQuacked += (char)230;
+					break;
+				case "QUAckQUAck":
+					deQuacked += (char)231;
+					break;
+				case "quaCkQUAck":
+					deQuacked += (char)232;
+					break;
+				case "QuaCkQUAck":
+					deQuacked += (char)233;
+					break;
+				case "qUaCkQUAck":
+					deQuacked += (char)234;
+					break;
+				case "QUaCkQUAck":
+					deQuacked += (char)235;
+					break;
+				case "quACkQUAck":
+					deQuacked += (char)236;
+					break;
+				case "QuACkQUAck":
+					deQuacked += (char)237;
+					break;
+				case "qUACkQUAck":
+					deQuacked += (char)238;
+					break;
+				case "QUACkQUAck":
+					deQuacked += (char)239;
+					break;
+				case "quacKQUAck":
+					deQuacked += (char)240;
+					break;
+				case "QuacKQUAck":
+					deQuacked += (char)241;
+					break;
+				case "qUacKQUAck":
+					deQuacked += (char)242;
+					break;
+				case "QUacKQUAck":
+					deQuacked += (char)243;
+					break;
+				case "quAcKQUAck":
+					deQuacked += (char)244;
+					break;
+				case "QuAcKQUAck":
+					deQuacked += (char)245;
+					break;
+				case "qUAcKQUAck":
+					deQuacked += (char)246;
+					break;
+				case "QUAcKQUAck":
+					deQuacked += (char)247;
+					break;
+				case "quaCKQUAck":
+					deQuacked += (char)248;
+					break;
+				case "QuaCKQUAck":
+					deQuacked += (char)249;
+					break;
+				case "qUaCKQUAck":
+					deQuacked += (char)250;
+					break;
+				case "QUaCKQUAck":
+					deQuacked += (char)251;
+					break;
+				case "quACKQUAck":
+					deQuacked += (char)252;
+					break;
+				case "QuACKQUAck":
+					deQuacked += (char)253;
+					break;
+				case "qUACKQUAck":
+					deQuacked += (char)254;
+					break;
+				case "QUACKQUAck":
+					deQuacked += (char)255;
+					break;
+				case "quackquaCk":
+					deQuacked += (char)256;
+					break;
+				case "QuackquaCk":
+					deQuacked += (char)257;
+					break;
+				case "qUackquaCk":
+					deQuacked += (char)258;
+					break;
+				case "QUackquaCk":
+					deQuacked += (char)259;
+					break;
+				case "quAckquaCk":
+					deQuacked += (char)260;
+					break;
+				case "QuAckquaCk":
+					deQuacked += (char)261;
+					break;
+				case "qUAckquaCk":
+					deQuacked += (char)262;
+					break;
+				case "QUAckquaCk":
+					deQuacked += (char)263;
+					break;
+				case "quaCkquaCk":
+					deQuacked += (char)264;
+					break;
+				case "QuaCkquaCk":
+					deQuacked += (char)265;
+					break;
+				case "qUaCkquaCk":
+					deQuacked += (char)266;
+					break;
+				case "QUaCkquaCk":
+					deQuacked += (char)267;
+					break;
+				case "quACkquaCk":
+					deQuacked += (char)268;
+					break;
+				case "QuACkquaCk":
+					deQuacked += (char)269;
+					break;
+				case "qUACkquaCk":
+					deQuacked += (char)270;
+					break;
 				default:
 					System.out.println("Character not found: " + translateArray[i]);
 					break;
