@@ -463,7 +463,7 @@ public class Quack {
      * @return deQuacked the decrypted string
      */
 
-	public String quackReader(String str2) {
+	public static String quackReader(String str2) {
 		String deQuacked = "";
 		String[] translateArray = str2.split(" ");
 		for (int i = 0; i < translateArray.length; i++) {
